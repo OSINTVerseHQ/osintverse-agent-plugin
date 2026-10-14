@@ -1,0 +1,16 @@
+{
+  "name": "osintverse",
+  "owner": { "name": "OSINTverse", "email": "hi@osintverse.com" },
+  "metadata": {
+    "description": "OSINTverse for Claude Code: the remote MCP server plus an investigation skill."
+  },
+  "plugins": [
+    {
+      "name": "osintverse",
+      "source": "./plugins/osintverse",
+      "description": "Run paid-per-lookup OSINT searches (breach, people, domain, crypto, image) from Claude, inside a daily cap you set.",
+      "category": "security",
+      "homepage": "https://osintverse.com/agents"
+    }
+  ]
+}

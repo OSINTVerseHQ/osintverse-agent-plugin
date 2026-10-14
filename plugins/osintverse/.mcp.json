@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "osintverse": {
+      "type": "http",
+      "url": "https://osintverse.com/mcp"
+    }
+  }
+}
