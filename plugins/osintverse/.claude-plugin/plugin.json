@@ -1,6 +1,6 @@
 {
   "name": "osintverse",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "OSINTverse MCP server and an investigation skill: quote before you spend, file results into Cases, treat provider data as untrusted.",
   "author": { "name": "OSINTverse", "email": "hi@osintverse.com", "url": "https://osintverse.com" },
   "homepage": "https://osintverse.com/agents",
