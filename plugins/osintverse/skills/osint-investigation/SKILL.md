@@ -14,6 +14,7 @@ OSINTverse puts breach, people, domain, host, crypto, and image data providers b
 2. Agree a budget. If the user gave none, propose one (for a single identifier, about $2 is usually enough) and wait for a yes before running paid tools.
 3. Call `list_providers` with the `input_type` to see who can look it up and at what price.
 4. Always quote first: `quote_search` for one lookup, `quote_bulk_search` for several identifiers or providers. If the quote is over budget, drop the most expensive or least relevant providers and quote again. If it says the run cannot go ahead (balance, cap), report why and stop. Do not retry around a cap.
+5. When the wallet is short, call `get_topup_link` (pass the quote's `shortfall_usd`) and give the user the link and `message_for_user`. You cannot pay: never enter card details or complete checkout. Retry only after the user says they have topped up, and check `get_balance` first.
 
 ## Choosing providers
 
@@ -62,7 +63,7 @@ A pivot is a new paid lookup on something a result revealed (an email in a breac
 
 ## Tools at a glance
 
-Read (free): `whoami`, `list_providers`, `quote_search`, `quote_bulk_search`, `get_balance`, `get_search`, `list_searches`, `list_cases`, `get_case`, `get_graph`, `export_search`, `search_docs`.
+Read (free): `whoami`, `list_providers`, `quote_search`, `quote_bulk_search`, `get_balance`, `get_topup_link`, `get_search`, `list_searches`, `list_cases`, `get_case`, `get_graph`, `export_search`, `search_docs`.
 Paid: `run_search`, `run_bulk_search`.
 Writes: `create_case`, `add_searches_to_case`, `update_case`, `annotate_case`, `share_case`, `revoke_case_share`, `share_search`, `cancel_search` (stops a running OSINT Industries job, no refund).
 
