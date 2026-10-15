@@ -63,10 +63,10 @@ A pivot is a new paid lookup on something a result revealed (an email in a breac
 
 ## Tools at a glance
 
-Read (free): `whoami`, `list_providers`, `quote_search`, `quote_bulk_search`, `get_balance`, `get_topup_link`, `get_search`, `list_searches`, `list_cases`, `get_case`, `get_graph`, `export_search`, `search_docs`.
+Read (free): `whoami`, `list_providers`, `quote_search`, `quote_bulk_search`, `get_balance`, `get_topup_link`, `get_search`, `list_searches`, `list_cases`, `get_case`, `get_graph`, `find_path`, `export_search`, `search_docs`.
 Paid: `run_search`, `run_bulk_search`.
 Writes: `create_case`, `add_searches_to_case`, `update_case`, `annotate_case`, `share_case`, `revoke_case_share`, `share_search`, `cancel_search` (stops a running OSINT Industries job, no refund).
 
-Use `get_graph` to see what a case found as entities and links, and `annotate_case` to record your reasoning on an entity (note, flag, alias) so the person sees it in the case. Create share links only when the user asks and names who gets them.
+Use `get_graph` to see what a case found as entities and links, `find_path` to see how two of them connect (a chain of links, not proof they are the same person), and `annotate_case` to record your reasoning on an entity (note, flag, alias) so the person sees it in the case. Create share links only when the user asks and names who gets them.
 
 Docs: https://osintverse.com/docs/mcp · Pricing as JSON: https://osintverse.com/pricing.json

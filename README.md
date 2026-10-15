@@ -22,7 +22,7 @@ claude plugin install osintverse@osintverse
 
 - **MCP server** `osintverse` at `https://osintverse.com/mcp` (OAuth 2.1; an `ov_` API key also works). Tools for providers and prices, quotes, single and bulk searches, Cases, and your balance. Paid tools ask for confirmation.
 - **Skill** `/osintverse:osint-investigation`, which Claude also picks up on its own when you ask it to look something up.
-- **Prompts** from the server: `/osintverse:investigate_email`, `investigate_username`, `investigate_domain`, `investigate_phone`, `investigate_wallet`.
+- **Prompts** from the server: `/osintverse:investigate_email`, `investigate_username`, `investigate_domain`, `investigate_phone`, `investigate_wallet`, plus `summarise_case` and `pivot_case` for an existing case.
 
 ## Other agents
 
